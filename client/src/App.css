@@ -1,0 +1,110 @@
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  margin: 0 10px;
+
+}
+.navbar .navigation {
+
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .navigation {
+  display: flex;
+  gap: 30px;
+  margin: 0 40px
+}
+
+/* Banner */
+
+.banner {
+  height: calc(100vh - 70px); /*100vh - navbar*/
+  width: 100%;
+
+  padding: 0 30px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-image: url("./assets/banner_digital_earth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.banner .text{
+  color: #F9F7F7;
+  
+}
+.banner .text h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+.banner .text p {
+  font-size: 1.2rem;
+}
+.banner form input {
+  width: 40%;
+  height: 30px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+/* Latest Posts */
+
+.latestPosts {
+  width: 100%;
+  height: fit-content;
+}
+.latestPosts .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #DBE2EF;
+}
+.latestPosts .container .title{
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Post */
+
+.post {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  max-height: 250px;
+  gap: 10px;
+  margin: 20px 0;
+}
+.post .image {
+  margin: 0 auto;
+}
+.post .image img {
+  max-height: 250px;
+  max-width: 100%;
+}
+.post .text h2 {
+  margin: 0;
+}
+.post .text .info {
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+}
+.post .text .info a{
+  color: #333;
+  font-weight: bold;
+}
+.post .text .info time{
+  color: #535353;
+}
