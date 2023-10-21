@@ -1,4 +1,4 @@
-export default function Post() {
+export const Post = () => {
     return(
         <div className="post">
             <div className="image">
@@ -10,7 +10,7 @@ export default function Post() {
                     <a href="#">@CopyDawg</a>  
                     <time>20-10-2023 02:10</time>
                 </p>
-                <p>The Biggest Cyber Attacks, Ransomware Attacks and Data Breaches - our compilation for the month of September 2023. </p>
+                <p className="summary">The Biggest Cyber Attacks, Ransomware Attacks and Data Breaches - our compilation for the month of September 2023. </p>
             </div>
         </div>
     );
