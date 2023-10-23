@@ -1,14 +1,19 @@
-import { Post, Navbar } from "../components";
+import { useContext, useEffect } from "react";
+import { Post } from "../components";
+import { ModalContext } from "../context/ModalContext";
 
 export const HomePage = () => {
+    const {setIsModalOpen} = useContext(ModalContext);
+    useEffect(() => {
+        setIsModalOpen(false);
+    }, [])
+    
     return(
         <div className="app">
-
-            <Navbar/>
-
+        
             <section className="banner">
                 <div className="text">
-                    <h1>Copy Cave</h1>
+                    <h1><span>CC</span>Copy Cave</h1>
                     <p>Un espacio para compartir noticias e información sobre tecnología</p>
                 </div>
                 <form className="searchForm">
@@ -24,7 +29,7 @@ export const HomePage = () => {
                     <Post/>
                 </div>
             </main>
-
+        
         </div>
     );
 }
