@@ -18,8 +18,8 @@ export const LoginPage = () => {
                     <p>Please enter your details</p>
                 </div>
                 <form>
-                    <label>Email</label>
-                    <input placeholder="john@gmail.com"/>
+                    <label>Username</label>
+                    <input placeholder="Enter username"/>
                     <label>Password</label>
                     <input type="password" placeholder="Enter your password"/>
                     <input type="submit" className="login-submit"/>
