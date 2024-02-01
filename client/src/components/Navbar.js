@@ -56,7 +56,7 @@ export const Navbar = () => {
                         { username && (
                             <>
                                 <NavLink to="/write" className="nav-link">Write new article</NavLink>
-                                <NavLink to="/logout" className="nav-link">Logout</NavLink>
+                                <NavLink onClick={logout} className="nav-link">Logout</NavLink>
                             </>
                         )}
                         { !username && (

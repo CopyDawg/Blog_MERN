@@ -1,6 +1,6 @@
 import "../App.css";
 import { Route, Routes } from "react-router-dom";
-import { HomePage, LoginPage, RegisterPage } from "../pages";
+import { CreatePostPage, HomePage, LoginPage, RegisterPage } from "../pages";
 import { Layout } from "../layout/Layout";
 
 export const AppRouter = () => {
@@ -10,6 +10,7 @@ export const AppRouter = () => {
                 <Route index element={ <HomePage/> } />
                 <Route path="/login" element={ <LoginPage/> } />
                 <Route path="/join" element={ <RegisterPage/> } />
+                <Route path="/write" element={ <CreatePostPage/> } />
             </Route>
         </Routes>
     )
